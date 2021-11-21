@@ -1,4 +1,4 @@
-import { Telegraf } from "telegraf";
+import { Context, Telegraf } from "telegraf";
+import { bot } from "./main";
+import { MyContext } from "./interfaces/context.interface";
 import config from "config";
-
-export const bot = new Telegraf(config.get("BOT_TOKEN"));
